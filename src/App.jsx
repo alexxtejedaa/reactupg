@@ -1,4 +1,5 @@
 import './assets/css/Test.css'
+
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Logosection from './components/Logosection'
@@ -10,24 +11,26 @@ import Testimonialssection from './components/Testimonialssection'
 import Faqsection from './components/Faqsection'
 import Subscribewrapper from './components/Subscribewrapper'
 
+
 function App() {
 
 
+
   return (
+
     <>
-        <Header />
-          <Hero />
-          <Logosection />
-          <Appfeatures />
-          <Howdoesitwork />
-          <Monertransfersection />
-          <Testimonialssection />
-          <Faqsection />
-          <Subscribewrapper />
-          <Footer />
-
-
+      <Header />
+        <Hero />
+        <Logosection />
+        <Appfeatures />
+        <Howdoesitwork />
+        <Monertransfersection />
+        <Testimonialssection />
+        <Faqsection />
+        <Subscribewrapper />
+      <Footer />
     </>
+
   )
 }
 
