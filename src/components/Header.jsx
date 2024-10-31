@@ -1,7 +1,31 @@
-import React from 'react'
 import SiliconLogo from '../assets/Desktop bilder/Silicon.svg'
+import React, { useState, useEffect } from 'react';
+
 
 const Header = () => {
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('darkmode');
+    if (storedTheme === 'on') {
+      setIsDarkMode(true);
+      document.documentElement.classList.add('dark');
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    if (isDarkMode) {
+      setIsDarkMode(false);
+      localStorage.setItem('darkmode', 'off');
+      document.documentElement.classList.remove('dark');
+    } else {
+      setIsDarkMode(true);
+      localStorage.setItem('darkmode', 'on');
+      document.documentElement.classList.add('dark');
+    }
+  };
+
   return (
 
     <header>
