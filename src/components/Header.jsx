@@ -1,5 +1,5 @@
-import SiliconLogo from '../assets/Desktop bilder/Silicon.svg'
 import React, { useState, useEffect } from 'react';
+import Nysilicon from '../assets/Desktop bilder/Nysilicon.svg'
 
 
 const Header = () => {
@@ -34,17 +34,25 @@ const Header = () => {
           <nav className="navbar">
             <div className="nav-left">
               <div className="logo">
-                  <img src={SiliconLogo} />
+                  <img src={Nysilicon} />
+                  <p>Silicon</p>
               </div> 
               <ul className="nav-links">
                   <li><a href="#">Features</a></li>
+                  <li><a href="#">Contacts</a></li>
               </ul>
             </div>
 
             <div className="nav-right">
               <div className="dark-mode-toggle"> 
                 <span>Dark Mode</span>
-                <input type="checkbox" id="dark-mode" className="toggle-checkbox" />
+                <input
+                  type="checkbox"
+                  id="dark-mode"
+                  className="toggle-checkbox"
+                  checked={isDarkMode}
+                  onChange={toggleDarkMode}
+                />
                 <label htmlFor="dark-mode" className="toggle-label"></label>
               </div>
                   <button className="sign-btn">Sign in / up</button>

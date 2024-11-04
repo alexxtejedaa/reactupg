@@ -26,72 +26,50 @@
   --color-L:#FFFFFF ;
   --color-brandbtn:#6366F1 ;
   --color-secondary:#EFF2FC ;
-
-  /* Dark mode färger
-  --dark-bg: #080032; /* Mörk bakgrund */
-  /* --dark-bodytext: #F1F4FD; Ljus text för mörk bakgrund */
-  /* --dark-heading: #6366F1; Primär färg för rubriker i mörkt läge */
-  /* --dark-mutedtext: #9397AD; Mindre framträdande text */
-  /* --dark-card-bg: #0B0F19; Kort och boxar bakgrundsfärg */
 }
-
-/* Dark mode specifika variabler */
-/* [data-theme="dark"] {
-  --color-lightBG: var(--dark-bg);
-  --color-bodytext: var(--dark-bodytext);
-  --color-headingdark: var(--dark-heading);
-  --color-mutedtext: var(--dark-mutedtext);
-  --color-secondary: var(--dark-card-bg);
-} */ 
-
 
 .dark {
   color-scheme: dark;
   --color-lightBG: #080032; /* Mörk bakgrundsfärg */
+  --color-secondary: #0B0F19; /* Bakgrundsfärg för kort och boxar */
   --color-bodytext: #F1F4FD; /* Ljus text för mörk bakgrund */
   --color-headingdark: #F1F4FD; /* Ljusare rubriker */
   --color-mutedtext: #9397AD; /* Mindre framträdande text */
-  --color-secondary: #0B0F19; /* Bakgrundsfärg för kort och boxar */
   --color-navigation: #F1F4FD; /* Navigationens färg i mörkt läge */
   --color-primary: #6366F1; /* Accentfärg i mörkt läge */
-}
 
-/* Exempel på hur olika delar påverkas */
-body.dark {
-  background-color: var(--color-lightBG);
-  color: var(--color-bodytext);
-}
+  .navbar {
+    background: #0b0f1900;
 
-.navbar.dark {
-  background-color: var(--color-lightBG);
-}
+  }
+  .hero {
+    background: linear-gradient(to bottom, rgba(11, 15, 25, 0) 0%, rgba(11, 15, 25, 0.7) 30%, rgba(11, 15, 25, 0) 100%),
+              radial-gradient(circle, rgba(11, 15, 25, 0.1) 10%, rgba(11, 15, 25, 0.05) 42%, rgba(11, 15, 25, 0) 83%);
+  }
+  .features-content h2 {
+    color: #ffffff;
+  }
+  .features-content p {
+    color: #FFFFFF;
+  }
+  .how-it-works {
+    background: linear-gradient(to bottom, rgba(11, 15, 25, 0) 0%, rgba(11, 15, 25, 0.7) 30%, rgba(11, 15, 25, 0) 100%),
+              radial-gradient(circle, rgba(11, 15, 25, 0.1) 10%, rgba(11, 15, 25, 0.05) 42%, rgba(11, 15, 25, 0) 83%);
+   }
+   .testimonials-section {
+    background-color: #2b20641b;
+   }
+   .subscribe-wrapper {
+    background-color: #2b20641b;
+  }
+  .subscribe-section {
+        background-color: #2b206404;
+  }
+  .site-footer {
+    background-color: #2b20641b;
+  }
 
-.hero-content h1.dark {
-  color: var(--color-headingdark);
 }
-
-.hero-content p.dark, .faq-answer.dark {
-  color: var(--color-bodytext);
-}
-
-.testimonial-box.dark, .contact-box.dark, .faq-item.dark {
-  background-color: var(--color-secondary);
-  color: var(--color-bodytext);
-}
-
-.learn-more-btn.dark, .sign-btn.dark {
-  background-color: var(--color-primary);
-}
-
-.subscribe-wrapper.dark {
-  background-color: var(--color-secondary);
-}
-
-.site-footer.dark {
-  background-color: var(--color-lightBG);
-  color: var(--color-mutedtext);
-}
-
 
 html {
   color-scheme: light;
@@ -124,6 +102,7 @@ body {
 }
 
 /* Navbar-sektion */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -141,10 +120,16 @@ body {
   align-items: center;
 }
 
+.logo p {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: larger;
+}
+
 .logo img {
   width: 100px;
   height: 50px;
-  margin-right: 10px;
 }
 
 .nav-links {
@@ -300,12 +285,6 @@ body {
 .logo-section img {
   max-width: 100%; 
   height: auto;   
-  opacity: 0.8;   
-  transition: opacity 0.3s ease; 
-}
-
-.logo-section img:hover {
-  opacity: 1;  
 }
 
 /* App Features Section */
@@ -384,14 +363,13 @@ body {
 
 /* How Does It Work Section */
 .how-it-works {
-  background-color: #F3F6FF; 
   text-align: center; 
   padding: 60px 0; 
 }
 
 .how-it-works h1 {
   font-size: 2.5em; 
-  color: #333;
+  /* color: #333; */
   margin-bottom: 40px; 
 }
 
@@ -410,21 +388,17 @@ body {
 
 .transaction-info h4 {
   font-size: 1.8em; 
-  color: #333;
   margin-bottom: 10px; 
 }
 
-
 .transaction-info p {
   font-size: 1.1em; 
-  color: #6c757d;
   max-width: 600px; 
   margin: 0 auto; 
 }
 
 /* Money Transfer Section */
 .money-transfer-section {
-  background-color: #ffffff; 
   padding: 60px 0;
 }
 
@@ -448,7 +422,6 @@ body {
 
 .text-block h2 {
   font-size: 1.5em;
-  color: #333;
   margin-bottom: 20px;
 }
 
@@ -464,7 +437,6 @@ body {
 
 .text-block ul.features-list li {
   font-size: 1em;
-  color: #6c757d;
   margin-bottom: 10px;
   display: flex;
   align-items: center; 
@@ -515,12 +487,10 @@ body {
 
 .icon-item p {
   font-size: 1em;
-  color: #6c757d;
 }
 
 /* Testimonials Section */
 .testimonials-section {
-  background-color: #F3F6FF; 
   padding: 100px 0;
   position: relative;
 }
@@ -542,7 +512,6 @@ body {
   font-size: 2.2em; 
   font-weight: 900; 
   line-height: 1.1; 
-  color: #333;
   margin: 0;
   padding: 0;
 }
@@ -559,7 +528,6 @@ body {
 }
 
 .testimonial-box {
-  background-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -600,7 +568,6 @@ body {
 
 .testimonial-box p {
   font-size: 1em;
-  color: #6c757d;
   margin-bottom: 20px;
 }
 
@@ -626,14 +593,12 @@ body {
 
 .client-role {
   font-size: 0.9em;
-  color: #6c757d;
   margin: 0;
   line-height: 0;
 }
 
 .faq-section {
   padding: 70px 0px;
-  background-color: #ffffff; 
   transform: scale(0.9);
 }
 
@@ -653,13 +618,11 @@ body {
   font-size: 2.2em;
   font-weight: 900;
   line-height: 1.2;
-  color: #333;
   margin-bottom: 30px;
 }
 
 .faq-left-column p {
   font-size: 1.1em;
-  color: #6c757d;
   margin-bottom: 30px;
 }
 
@@ -669,7 +632,6 @@ body {
 }
 
 .contact-box {
-  background-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtil skugga */
@@ -720,19 +682,14 @@ body {
 }
 
 .faq-item {
-  background-color: white;
   border: 1px solid #e5e7eb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 15px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   position: relative;
 }
 
-.faq-item:hover {
-  background-color: #f9fafb;
-}
 
 .faq-question {
   display: flex;
@@ -744,7 +701,6 @@ body {
   font-size: 1.1em;
   font-weight: bold;
   margin: 0;
-  color: #333;
 }
 
 .faq-question img {
@@ -756,7 +712,6 @@ body {
 .faq-answer {
   margin-top: 10px;
   font-size: 1em;
-  color: #6c757d;
   display: block; 
 }
 
@@ -805,7 +760,6 @@ body {
 
 .subscribe-left p {
   font-size: 1.2em;
-  color: #333; 
   font-weight: 900; 
   margin: 0;
 }
@@ -823,7 +777,7 @@ body {
 .input-group {
   display: flex;
   align-items: center;
-  background-color: white; 
+  background-color: rgba(48, 41, 56, 0.057); 
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
@@ -841,7 +795,6 @@ body {
 
 .subscribe-form button {
   background-color: #4f46e5; 
-  color: white; 
   border: none; 
   padding: 10px 20px; 
   cursor: pointer; 
@@ -854,7 +807,6 @@ body {
 
 /* Footer */
 .site-footer {
-  background-color: #ffffff; 
   text-align: center; 
   padding: 30px 0; 
   font-size: 0.8em; 
