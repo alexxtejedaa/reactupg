@@ -1,6 +1,6 @@
-import React from 'react'
-import Notis from '../assets/Desktop bilder/notis.svg'
-import Brevsvg from '../assets/Desktop bilder/brevsvg.svg'
+import React from 'react';
+import Notis from '../assets/Desktop bilder/notis.svg';
+import Brevsvg from '../assets/Desktop bilder/brevsvg.svg';
 
 
 const Subscribewrapper = () => {

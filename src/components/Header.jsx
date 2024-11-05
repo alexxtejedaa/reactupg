@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Nysilicon from '../assets/Desktop bilder/Nysilicon.svg'
+import Nysilicon from '../assets/Desktop bilder/Nysilicon.svg';
 
 
 const Header = () => {

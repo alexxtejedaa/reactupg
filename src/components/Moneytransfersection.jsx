@@ -1,9 +1,9 @@
-import React from 'react'
-import Checkmark from '../assets/Desktop bilder/checkmark.svg'
-import Graf1 from '../assets/Desktop bilder/graf1.svg'
-import Visakort from '../assets/Desktop bilder/visakort.svg'
-import Iconeasypayment from '../assets/Desktop bilder/iconeasypayment.svg'
-import Iconcashback from '../assets/Desktop bilder/iconcashback.svg'
+import React from 'react';
+import Checkmark from '../assets/Desktop bilder/checkmark.svg';
+import Graf1 from '../assets/Desktop bilder/graf1.svg';
+import Visakort from '../assets/Desktop bilder/visakort.svg';
+import Iconeasypayment from '../assets/Desktop bilder/iconeasypayment.svg';
+import Iconcashback from '../assets/Desktop bilder/iconcashback.svg';
 
 
 

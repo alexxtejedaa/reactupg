@@ -1,7 +1,7 @@
-import React from 'react'
-import Mobil1 from '../assets/Desktop bilder/mobil1.svg'
-import Mobil2 from '../assets/Desktop bilder/mobil2.svg'
-import Mobil3 from '../assets/Desktop bilder/mobil3.svg'
+import React from 'react';
+import Mobil1 from '../assets/Desktop bilder/mobil1.svg';
+import Mobil2 from '../assets/Desktop bilder/mobil2.svg';
+import Mobil3 from '../assets/Desktop bilder/mobil3.svg';
 
 
 const Howdoesitwork = () => {

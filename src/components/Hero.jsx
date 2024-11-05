@@ -1,8 +1,8 @@
-import React from 'react'
-import Appstore from '../assets/Desktop bilder/appstore.svg'
-import Googleplay from '../assets/Desktop bilder/googleplay.svg'
-import Discovermore from '../assets/Desktop bilder/discover-more.svg'
-import Heroimage from '../assets/Desktop bilder/hero-image.svg'
+import React from 'react';
+import Appstore from '../assets/Desktop bilder/appstore.svg';
+import Googleplay from '../assets/Desktop bilder/googleplay.svg';
+import Discovermore from '../assets/Desktop bilder/discover-more.svg';
+import Heroimage from '../assets/Desktop bilder/hero-image.svg';
 
 
 const Hero = () => {

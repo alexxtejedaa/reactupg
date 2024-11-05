@@ -1,9 +1,11 @@
-import React from 'react'
-import Citat1 from '../assets/Desktop bilder/citat.svg'
-import Rating4 from '../assets/Desktop bilder/rating4.svg'
-import Emoji1 from '../assets/Desktop bilder/emoji1.svg'
-import Rating5 from '../assets/Desktop bilder/rating5.svg'
-import Emoji2 from '../assets/Desktop bilder/emoji2.svg'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import TestimonialItem from './TestimonialItem';
+import Citat1 from '../assets/Desktop bilder/citat.svg';
+import Rating4 from '../assets/Desktop bilder/rating4.svg';
+import Emoji1 from '../assets/Desktop bilder/emoji1.svg';
+import Rating5 from '../assets/Desktop bilder/rating5.svg';
+import Emoji2 from '../assets/Desktop bilder/emoji2.svg';
 
 const Testimonialssection = () => {
   return (

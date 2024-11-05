@@ -1,11 +1,11 @@
-import React from 'react'
-import Imgphone from '../assets/Desktop bilder/imgphone.svg'
-import Easypayment from '../assets/Desktop bilder/iconeasypayment.svg'
-import Iconcost from '../assets/Desktop bilder/iconCost.svg'
-import Iconcashback from '../assets/Desktop bilder/iconcashback.svg'
-import Icondatasecurity from '../assets/Desktop bilder/iconDataSecurity.svg'
-import Icon247 from '../assets/Desktop bilder/icon247.svg'
-import Topstandardsicon from '../assets/Desktop bilder/icontopstandards.svg'
+import React from 'react';
+import Imgphone from '../assets/Desktop bilder/imgphone.svg';
+import Easypayment from '../assets/Desktop bilder/iconeasypayment.svg';
+import Iconcost from '../assets/Desktop bilder/iconCost.svg';
+import Iconcashback from '../assets/Desktop bilder/iconcashback.svg';
+import Icondatasecurity from '../assets/Desktop bilder/iconDataSecurity.svg';
+import Icon247 from '../assets/Desktop bilder/icon247.svg';
+import Topstandardsicon from '../assets/Desktop bilder/icontopstandards.svg';
 
 
 const Appfeatures = () => {

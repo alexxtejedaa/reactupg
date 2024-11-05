@@ -1,8 +1,9 @@
-import React from 'react'
-import Telesvg from '../assets/Desktop bilder/telesvg.svg'
-import Chattsvg from '../assets/Desktop bilder/chattsvg.svg'
-import Pilner from '../assets/Desktop bilder/pilner.svg'
-import Pilupp from '../assets/Desktop bilder/pilupp.svg'
+import React from 'react';
+import axios from 'axios';
+import Telesvg from '../assets/Desktop bilder/telesvg.svg';
+import Chattsvg from '../assets/Desktop bilder/chattsvg.svg';
+import Pilner from '../assets/Desktop bilder/pilner.svg';
+import Pilupp from '../assets/Desktop bilder/pilupp.svg';
 
 
 const Faqsection = () => {

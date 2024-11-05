@@ -1,5 +1,5 @@
-import React from 'react'
-import Sixlogos from '../assets/Desktop bilder/sixlogos.svg'
+import React from 'react';
+import Sixlogos from '../assets/Desktop bilder/sixlogos.svg';
 
 
 const Logosection = () => {
