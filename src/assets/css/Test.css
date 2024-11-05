@@ -30,17 +30,16 @@
 
 .dark {
   color-scheme: dark;
-  --color-lightBG: #080032; /* Mörk bakgrundsfärg */
-  --color-secondary: #0B0F19; /* Bakgrundsfärg för kort och boxar */
-  --color-bodytext: #F1F4FD; /* Ljus text för mörk bakgrund */
-  --color-headingdark: #F1F4FD; /* Ljusare rubriker */
-  --color-mutedtext: #9397AD; /* Mindre framträdande text */
-  --color-navigation: #F1F4FD; /* Navigationens färg i mörkt läge */
-  --color-primary: #6366F1; /* Accentfärg i mörkt läge */
+  --color-lightBG: #080032; 
+  --color-secondary: #0B0F19; 
+  --color-bodytext: #F1F4FD; 
+  --color-headingdark: #F1F4FD; 
+  --color-mutedtext: #9397AD; 
+  --color-navigation: #F1F4FD; 
+  --color-primary: #6366F1; 
 
   .navbar {
     background: #0b0f1900;
-
   }
   .hero {
     background: linear-gradient(to bottom, rgba(11, 15, 25, 0) 0%, rgba(11, 15, 25, 0.7) 30%, rgba(11, 15, 25, 0) 100%),
@@ -63,7 +62,7 @@
     background-color: #2b20641b;
   }
   .subscribe-section {
-        background-color: #2b206404;
+        background-color: #2b206400;
   }
   .site-footer {
     background-color: #2b20641b;
